@@ -1,0 +1,74 @@
+
+
+// CREATE TABLE public.attachments (
+//   id integer NOT NULL,
+//   file_name character varying(70) NOT NULL,
+//   file_source_name text NOT NULL,
+//   task_id integer NOT NULL
+// );
+
+// CREATE TABLE public.chatrooms (
+//   id integer NOT NULL,
+//   name character varying(50) NOT NULL
+// );
+
+// CREATE TABLE public.messages (
+//   id integer NOT NULL,
+//   sender_id integer NOT NULL,
+//   chatroom_id integer NOT NULL,
+//   text text NOT NULL,
+//   date date NOT NULL
+// );
+
+// CREATE TABLE public.projects (
+//   id integer NOT NULL,
+//   name character varying(100) NOT NULL,
+//   description text NOT NULL,
+//   date_created date NOT NULL,
+//   date_due date,
+//   category character varying(50) NOT NULL
+// );
+
+// CREATE TABLE public.projects_members (
+//   "id " integer NOT NULL,
+//   project_id integer NOT NULL,
+//   user_id integer NOT NULL,
+//   user_role character varying(50) NOT NULL
+// );
+
+// CREATE TABLE public.subtasks (
+//   id integer NOT NULL,
+//   text text NOT NULL,
+//   completed boolean DEFAULT false NOT NULL,
+//   task_id integer NOT NULL
+// );
+
+// CREATE TABLE public.tasks (
+//   id integer NOT NULL,
+//   name character varying(50) NOT NULL,
+//   description text,
+//   status character varying(20),
+//   project_id integer NOT NULL,
+//   date_created date NOT NULL
+// );
+
+// CREATE TABLE public.tasks_members (
+//   "id " integer NOT NULL,
+//   user_id integer NOT NULL,
+//   task_id integer
+// );
+
+// CREATE TABLE public.users_chatrooms (
+//   id integer NOT NULL,
+//   chatroom_id integer NOT NULL,
+//   user_id integer NOT NULL
+// );
+
+// CREATE TABLE public.users (
+//   id integer NOT NULL,
+//   username character varying(50) NOT NULL,
+//   password character varying(50) NOT NULL,
+//   admin boolean DEFAULT false,
+//   email character varying(50) NOT NULL,
+//   avatar_name text
+// );
