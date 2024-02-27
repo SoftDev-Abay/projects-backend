@@ -62,7 +62,7 @@ app.use("/joke", jokeRoute);
 app.use("/headlines", headlinesRoutes);
 
 mongoose
-  .connect(mongoDBURL, {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     family: 4,
